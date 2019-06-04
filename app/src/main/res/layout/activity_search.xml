@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/h_sv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/choosen_search_engin_item"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Google"
+                    android:visibility="gone"
+                    android:id="@+id/btn_google"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/choose_search_engin_item"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="YouTube"
+                    android:id="@+id/btn_yt"
+                    android:visibility="gone"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/progressbar" />
+
+    </LinearLayout>
+</FrameLayout>
