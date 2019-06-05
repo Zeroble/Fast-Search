@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
     EditText searchWord, essentialWord, exceptWord;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         searchWord = findViewById(R.id.search_word);
         essentialWord = findViewById(R.id.essential_word);
         exceptWord = findViewById(R.id.except_word);
+        ImageView imageView = findViewById(R.id.img);
     }
 
     public void Search(View v){
